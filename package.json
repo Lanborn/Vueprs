@@ -1,0 +1,27 @@
+{
+  "name": "vueprs",
+  "version": "1.0.0",
+  "description": "第N+3次测试",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lanborn/Vueprs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lanborn/Vueprs/issues"
+  },
+  "homepage": "https://github.com/Lanborn/Vueprs#readme",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
