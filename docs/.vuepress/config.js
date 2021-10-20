@@ -1,6 +1,6 @@
 const moment = require('moment');
 module.exports = {
-    base: "/vuepress\_ts/",
+    base: "/Vueprs/",
     title: "独自在秋雨后踏碎落叶",
     description: "直到风林寂静，游走世界尽头",
     head: [
