@@ -16,6 +16,3 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
 # 你好呀！新朋友
-
-
-注意需要在本地安装vuepress yarn add -D vupress !
