@@ -24,6 +24,7 @@ module.exports = {
                 { text: 'Vue-base', link: '/base-md/Vue/'},
             ]
         },
+        { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
         { text: 'About', link: '/about/'},
         { text: 'External', link: 'https://Lanborn.github.io', target:'_self' },
       ],
@@ -67,11 +68,15 @@ module.exports = {
               return moment(timestamp).format("LLLL")
             }
           },
+        ],
+        [
           'permalink-pinyin',
           {
             lowercase: true,
             separator: '-'
           },
+        ],
+        [
           '@vuepress-reco/vuepress-plugin-kan-ban-niang',
           {
             theme: [
@@ -85,6 +90,6 @@ module.exports = {
             width: 250,
             height: 320
           }
-        ],
-    ]
+        ]
+    ],
 }
