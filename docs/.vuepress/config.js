@@ -88,18 +88,18 @@ module.exports = {
         [
           "@vuepress-reco/vuepress-plugin-bgm-player",
           {
-            audios: [
+            audios: [              
               {
-                name: '강남역 4번 출구',
-                artist: 'Plastic / Fallin` Dild',
-                url: 'https://assets.smallsunnyfox.com/music/2.mp3',
-                cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
-              },
-              {
-                name: '用胳膊当枕头',
-                artist: '최낙타',
+                name: '斑驳陆离之林，恍若隔世',
+                artist: 'Robyn',
                 url: 'https://assets.smallsunnyfox.com/music/3.mp3',
                 cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+              },
+              {
+                name: '恍惚交错的记忆',
+                artist: '余日秋山',
+                url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+                cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
               }
             ]  
           }
