@@ -36,7 +36,7 @@ var person = new Person();
 
 原型中自带有一个系统写好的属性：
 constructor
-3. 对象如何查看原型 —— > 隐式属性 __proto__
+3. 对象如何查看原型 —— > 隐式属性__proto__
 ```
 Person.prototype.name = 'abc';
 function Person() {
