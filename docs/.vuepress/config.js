@@ -21,7 +21,7 @@ module.exports = {
         { text: 'Base-MD', link: '/base-md/',
             items: [
                 { text: 'JavaScript' ,link: '/base-md/JavaScript/'},
-                { text: '原型链', link: '/base-md/JavaScript/yuanxing.md/'},
+                { text: '原型链', link: '/base-md/JavaScript/yuanxing.md'},
                 { text: 'Vue-base', link: '/base-md/Vue/'},
             ]
         },
