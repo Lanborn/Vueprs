@@ -10,7 +10,6 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }],
         ['meta', { name: 'author', content: 'lanborn'}],
         ['meta', { name: 'keywords', contene:'Vuepress介绍说明'}],
-        ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_2884024_avp2ex4xpj5.css'}]
     ],
     themeConfig: {
         type: 'blog',
@@ -87,16 +86,9 @@ module.exports = {
           }
         ],
         [
-          "@vuepress-reco/vuepress-plugin-bgm-player",{
+          "@vuepress-reco/vuepress-plugin-bgm-player",
+          {
             audios: [
-              // 本地文件示例
-              // {
-              //   name: '장가갈 수 있을까',
-              //   artist: '咖啡少年',
-              //   url: '/bgm/1.mp3',
-              //   cover: '/bgm/1.jpg'
-              // },
-              // 网络文件示例
               {
                 name: '강남역 4번 출구',
                 artist: 'Plastic / Fallin` Dild',
@@ -115,9 +107,9 @@ module.exports = {
         [
           "vuepress-plugin-cursor-effects",
           {
-            size: 2,                    // size of the particle, default: 2
-            shape: 'circle',  // shape of the particle, default: 'star'
-            zIndex: 999999999           // z-index property of the canvas, default: 999999999
+            size: 2,                    
+            shape: 'circle',  
+            zIndex: 999999999
           }
         ],
     ],
