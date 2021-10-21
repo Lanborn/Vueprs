@@ -1,4 +1,5 @@
 const moment = require('moment');
+const navConf = require('./nav.js');
 module.exports = {
     base: "/Vueprs/",
     theme: "reco",
@@ -9,26 +10,15 @@ module.exports = {
         ['link', { rel: 'icon', href: '/favicon.ico' }],
         ['meta', { name: 'author', content: 'lanborn'}],
         ['meta', { name: 'keywords', contene:'Vuepress介绍说明'}],
+        ['link', { rel: 'stylesheet', href: '//at.alicdn.com/t/font_2884024_avp2ex4xpj5.css'}]
     ],
     themeConfig: {
         type: 'blog',
+        mode: 'dark',
         logo: '/logo.png',
         author:"Lanborn",
         authorAvatar:"/logo.png",
-        nav: [
-        { text: 'Home', link: '/' },
-        { text: 'Guide', link: '/guide/' },
-        { text: 'Base-MD', link: '/base-md/',
-            items: [
-                { text: 'JavaScript' ,link: '/base-md/JavaScript/'},
-                { text: '原型链', link: '/base-md/JavaScript/yuanxing.md'},
-                { text: 'Vue-base', link: '/base-md/Vue/'},
-            ]
-        },
-        { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-        { text: 'About', link: '/about/'},
-        { text: 'External', link: 'https://Lanborn.github.io', target:'_self' },
-      ],
+        nav: navConf,
         subSidebar: 'auto',
         sidebarDepth: "1",
         search: true,
@@ -58,7 +48,11 @@ module.exports = {
             logo: "https://photo.smallsunnyfox.com/images/blog/friendlink/theme_reco.png",
             link: 'https://vuepress-theme-reco.recoluan.com'
           }
-        ]
+        ],
+        valineConfig: {
+          appId: 'cSTJqlT7PCzCo2B7f97KRpQ0-gzGzoHsz',// your appId
+          appKey: 'dkXLrN8217L29nNVIYdvMHRT', // your appKey
+        }
     },
     plugins: [
         [
@@ -91,6 +85,40 @@ module.exports = {
             width: 250,
             height: 320
           }
-        ]
+        ],
+        [
+          "@vuepress-reco/vuepress-plugin-bgm-player",{
+            audios: [
+              // 本地文件示例
+              // {
+              //   name: '장가갈 수 있을까',
+              //   artist: '咖啡少年',
+              //   url: '/bgm/1.mp3',
+              //   cover: '/bgm/1.jpg'
+              // },
+              // 网络文件示例
+              {
+                name: '강남역 4번 출구',
+                artist: 'Plastic / Fallin` Dild',
+                url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+                cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+              },
+              {
+                name: '用胳膊当枕头',
+                artist: '최낙타',
+                url: 'https://assets.smallsunnyfox.com/music/3.mp3',
+                cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+              }
+            ]  
+          }
+        ],
+        [
+          "vuepress-plugin-cursor-effects",
+          {
+            size: 2,                    // size of the particle, default: 2
+            shape: 'circle',  // shape of the particle, default: 'star'
+            zIndex: 999999999           // z-index property of the canvas, default: 999999999
+          }
+        ],
     ],
 }

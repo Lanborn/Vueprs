@@ -6,6 +6,7 @@ tags:
  - 前端
 categories:
  - 前端学习
+ - Vue
 ---
 ## Vue的初体验
 
@@ -68,4 +69,3 @@ data: {
 ### el的挂载范围
 
 el 不能绑定html 和 Body
-

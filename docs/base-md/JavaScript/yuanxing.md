@@ -7,6 +7,7 @@ tags:
  - 原型链
 categories:
  - 前端学习
+ - JavaScript
 ---
 
 ## 原型，原型链，call/apply

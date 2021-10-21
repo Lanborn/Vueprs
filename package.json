@@ -19,12 +19,15 @@
   },
   "homepage": "https://github.com/Lanborn/Vueprs#readme",
   "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
     "vuepress": "^1.8.2",
     "vuepress-plugin-permalink-pinyin": "^1.0.0"
   },
   "dependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "moment": "^2.29.1",
+    "valine": "^1.4.16",
+    "vuepress-plugin-cursor-effects": "^1.0.2",
     "vuepress-theme-reco": "^1.6.6"
   }
 }
