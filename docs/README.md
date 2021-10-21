@@ -2,7 +2,8 @@
 home: true
 bgImage: '/bg1.JPG'
 bgImageStyle: {
-  height: '480px',
+  height: '100vh',
   color: 'white',
 }
 ---
+

@@ -71,6 +71,19 @@ module.exports = {
           {
             lowercase: true,
             separator: '-'
+          },
+          '@vuepress-reco/vuepress-plugin-kan-ban-niang',
+          {
+            theme: [
+              'whiteCat'
+            ],
+            clean: false,
+            messages: { 
+              welcome: '欢迎来到我的博客', home: '心里的花，我想要带你回家。', theme: '好吧，希望你能喜欢我的其他小伙伴。', close: '你不喜欢我了吗？痴痴地望着你。' 
+            },
+            messageStyle: { right: '68px', bottom: '290px' },
+            width: 250,
+            height: 320
           }
         ],
     ]
