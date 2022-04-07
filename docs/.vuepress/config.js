@@ -1,7 +1,7 @@
 const moment = require('moment');
 const navConf = require('./nav.js');
 module.exports = {
-    base: "/Vueprs/",
+    // base: "/Vueprs/",
     theme: "reco",
     title: "独自在秋雨后踏碎落叶",
     description: "直到风林寂静，游走世界尽头",
@@ -9,8 +9,11 @@ module.exports = {
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
         ['link', { rel: 'icon', href: '/favicon.ico' }],
         ['meta', { name: 'author', content: 'lanborn'}],
-        ['meta', { name: 'keywords', contene:'Vuepress介绍说明'}],
+        ['meta', { name: 'keywords', contene:'Vuepress介绍说明,lanboc.cn,blog.lanboc.cn'}],
     ],
+    markdown: {
+      extractHeaders: [ 'h2', 'h3', 'h4' ]
+    },
     themeConfig: {
         type: 'blog',
         mode: 'dark',
@@ -20,6 +23,8 @@ module.exports = {
         nav: navConf,
         subSidebar: 'auto',
         sidebarDepth: "1",
+        record: "赣ICP备2021010390号",
+        recordLink: "https://beian.miit.gov.cn/",
         search: true,
         searchMaxSuggestions: 10,
         lastUpdated: '更新时间',
@@ -51,6 +56,9 @@ module.exports = {
         valineConfig: {
           appId: 'cSTJqlT7PCzCo2B7f97KRpQ0-gzGzoHsz',// your appId
           appKey: 'dkXLrN8217L29nNVIYdvMHRT', // your appKey
+          recordIP: true,
+          placeholder: '填写邮箱地址可以及时收到回复噢...',
+          visitor: true,
         }
     },
     plugins: [
@@ -74,11 +82,11 @@ module.exports = {
           '@vuepress-reco/vuepress-plugin-kan-ban-niang',
           {
             theme: [
-              'whiteCat'
+              'whiteCat','haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku'
             ],
             clean: false,
             messages: { 
-              welcome: '欢迎来到我的博客', home: '心里的花，我想要带你回家。', theme: '好吧，希望你能喜欢我的其他小伙伴。', close: '你不喜欢我了吗？痴痴地望着你。' 
+              welcome: '欢迎来到我的博客', home: '落叶的一生，难道只是为了归根吗？', theme: '好吧，希望你能喜欢我的其他小伙伴。', close: '结束也是一种开始' 
             },
             messageStyle: { right: '68px', bottom: '290px' },
             width: 250,
