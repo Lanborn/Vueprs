@@ -27,7 +27,8 @@ module.exports = {
         recordLink: "https://beian.miit.gov.cn/",
         search: true,
         searchMaxSuggestions: 10,
-        lastUpdated: '更新时间',
+        lastUpdated: 'Last Updated',
+        startYear: '2021',
         blogConfig: {
           category: {
             location: 2,     // 在导航栏菜单中所占的位置，默认2
@@ -51,6 +52,11 @@ module.exports = {
             desc: 'A simple and beautiful vuepress Blog & Doc theme.',
             logo: "https://photo.smallsunnyfox.com/images/blog/friendlink/theme_reco.png",
             link: 'https://vuepress-theme-reco.recoluan.com'
+          },
+          {
+            title: '被删的前端游乐场',
+            desc : 'Just playing around',
+            link : 'https://godbasin.github.io/front-end-playground/'
           }
         ],
         valineConfig: {
