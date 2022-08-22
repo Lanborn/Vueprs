@@ -25,9 +25,12 @@
   },
   "dependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "caniuse-lite": "^1.0.30001346",
     "moment": "^2.29.1",
     "valine": "^1.4.16",
+    "vue-canvas-effect": "^0.0.12",
     "vuepress-plugin-cursor-effects": "^1.0.2",
+    "vuepress-plugin-ribbon-animation": "^1.1.3",
     "vuepress-theme-reco": "^1.6.6"
   }
 }
